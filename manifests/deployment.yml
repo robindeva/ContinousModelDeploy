@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: robindevacontinousmodeldeploy 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: robindevacontinousmodeldeploy
+  template:
+    metadata:
+      labels:
+        app: robindevacontinousmodeldeploy 
+    spec:
+      containers:
+        - name: robindevacontinousmodeldeploy 
+          image: demoacr12.azurecr.io/robindevacontinousmodeldeploy
+          ports:
+          - containerPort: 80
