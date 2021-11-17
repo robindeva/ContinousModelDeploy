@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: cv-app
-        image: gcr.io/mlops-317803/imgwebapp:v1
+        image: demoacr12.azurecr.io/devtest
         ports:
         - containerPort: 8501
