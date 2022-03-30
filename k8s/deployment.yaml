@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: cv-app
-        image: demoacr12.azurecr.io/devtest
+        image: demokry.azurecr.io/dda-devtest
         ports:
         - containerPort: 8501
